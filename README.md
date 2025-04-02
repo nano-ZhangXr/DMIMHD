@@ -110,11 +110,12 @@ DMIMHD achieves state-of-the-art performance on all tasks compared to 12 strong 
 If you find this work useful, please cite:
 
 ```bibtex
-@article{zhang2025DMIMHD,
+@inproceedings{zhang2025dmimhd,
   title={DMIMHD: Dynamic Modality Interaction for Multi-modal Human Desire Understanding},
-  author={Zhang, Xiangrui},
-  journal={in press},
-  year={2025}
+  author={Xiangrui Zhang},
+  booktitle={International Joint Conference on Neural Networks (IJCNN)},
+  year={2025},
+  note={In press}
 }
 ```
 
