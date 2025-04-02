@@ -1,0 +1,41 @@
+hydra:
+  run:
+    dir: ./
+
+train:
+    batch_size: 16
+    pt_lr: 5e-5
+    lr: 8e-4
+    warmup_steps: 650
+    max_epoch: 25
+    max_steps: -1
+    gradient_accumulation_steps: 2
+    seed: 42
+    dropout_des: 0.3
+    dropout_sent: 0.3
+    dropout_emo: 0.3
+    weight_decay: 1e-1
+    negative_slope: 0.12
+
+model:
+    model_name_or_path: "/root/DMIMHD/bert-base-uncased"
+
+selecting:
+   dropout: 0.0 # Dropout of Attention Layer
+   embed_size: 256  # Dimensionality of the joint embedding.
+   threshold: 0.5 # Path threshold in Selecting Process.
+   num_head_sru: 16  # Number of heads in Semantic Relation Unit.
+   hid_sru: 512  # Hidden size of FeedForward in Semantic Relation Unit.
+   lambda_softmax_cmeu: 0.01  # Attention softmax temperature.
+   hid_selector: 512  # Hidden size of MLP in selectors.
+
+eval:
+    batch_size: 32
+    
+dataset:
+    max_input_len: 50
+    
+
+debug: False
+name: "exp_test"
+
