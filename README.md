@@ -1,24 +1,35 @@
-# DMIMHD: Dynamic Modality Interaction for Multi-modal Human Desire Understanding
+# 🧩 DMIMHD: Dynamic Modality Interaction for Multi-modal Human Desire Understanding
 
-This repository contains the official implementation of the paper:
+[![Conference](https://img.shields.io/badge/Conference-IJCNN%202025-blue)](https://ieeexplore.ieee.org/document/11227376)
+[![Publisher](https://img.shields.io/badge/Publisher-IEEE-lightgrey)](https://www.ieee.org/)
+[![Paper](https://img.shields.io/badge/Paper-IEEE%20Xplore-brightgreen)](https://doi.org/10.1109/IJCNN64981.2025.11227376)
 
-**"DMIMHD: Dynamic Modality Interaction for Multi-modal Human Desire Understanding"**  
-by **Xiangrui Zhang**  
-Faculty of Computational Mathematics and Cybernetics, Lomonosov Moscow State University
+This repository contains the **official implementation** of the paper:
 
-[[Paper (PDF)]](./DMIMHD.pdf)
+> **"DMIMHD: Dynamic Modality Interaction for Multi-modal Human Desire Understanding"**  
+> **Xiangrui Zhang**  
+> *Faculty of Computational Mathematics and Cybernetics, Lomonosov Moscow State University*  
+> Published in the *2025 International Joint Conference on Neural Networks (IJCNN)*, Rome, Italy.  
+> [DOI: 10.1109/IJCNN64981.2025.11227376](https://doi.org/10.1109/IJCNN64981.2025.11227376)
+
+📄 [[PDF (IEEE Xplore)]](https://doi.org/10.1109/IJCNN64981.2025.11227376) | [[Local PDF]](./DMIMHD.pdf)
 
 ---
 
 ## 🧠 Introduction
 
-Understanding human desires, emotions, and sentiments through multi-modal data is a challenging task. Our model **DMIMHD** introduces a unified **Dynamic Capsule Network** that captures interactions between textual and visual features using four specialized interaction units:
-- Rectified Identity Unit (RIU)
-- Semantic Relation Unit (SRU)
-- Contextual Guidance Unit (CGU)
-- Cross-modal Enhancement Unit (CMEU)
+Understanding **human desires** is essential to comprehending human **behavior, sentiment, and emotion**, as desire is one of the most fundamental human instincts.  
+Recent advances in **multi-modal learning** have enabled deeper analysis of desires through both **textual and visual** modalities.  
+However, existing models often struggle to fully capture **dynamic cross-modal interactions**.
 
-Each unit uses a dynamic soft selector to conditionally activate based on the input, allowing the model to adaptively fuse information.
+To address this, **DMIMHD** introduces a **unified dynamic modality interaction network** with four specialized interaction units:
+
+- 🔸 **Rectified Identity Unit (RIU)** — preserves unimodal identity features  
+- 🔸 **Semantic Relation Unit (SRU)** — learns semantic correspondences between modalities  
+- 🔸 **Contextual Guidance Unit (CGU)** — enhances global context alignment  
+- 🔸 **Cross-modal Enhancement Unit (CMEU)** — integrates high-level mutual reinforcement
+
+Each unit is equipped with a **soft selector**, allowing **adaptive fusion** of modalities per input sample — effectively learning diverse interaction patterns dynamically.
 
 ---
 
@@ -37,7 +48,7 @@ DMIMHD/
 
 ---
 
-## 🔧 Installation
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/nano-ZhangXr/DMIMHD.git
@@ -76,7 +87,7 @@ You can modify training settings in `Config/basic_cfg.yaml`.
 
 ## 📊 Dataset
 
-We use the **MSED** dataset (Multi-modal and Multi-task Sentiment Emotion and Desire), proposed by Jia et al. (2022), which includes:
+We employ the MSED dataset (Multi-modal and Multi-task Sentiment Emotion and Desire) proposed by Jia et al. (2022):
 - 6,127 training samples
 - 1,021 validation samples
 - 2,024 test samples
@@ -101,28 +112,32 @@ Each sample is annotated with:
 
 ## 📈 Results
 
-DMIMHD achieves state-of-the-art performance on all tasks compared to 12 strong baselines including BERT+ResNet and Multi-modal Transformers. See our paper for detailed numbers.
+DMIMHD achieves state-of-the-art performance across all tasks compared to 12 competitive baselines (including BERT+ResNet and multi-modal Transformer variants).
+Refer to our paper for full quantitative results and ablation studies.
 
 ---
 
-## 📄 Citation
+## 📚 Citation
 
-If you find this work useful, please cite:
+If you find our work helpful, please cite:
 
 ```bibtex
-@inproceedings{zhang2025dmimhd,
-  title={DMIMHD: Dynamic Modality Interaction for Multi-modal Human Desire Understanding},
-  author={Xiangrui Zhang},
-  booktitle={International Joint Conference on Neural Networks (IJCNN)},
+@INPROCEEDINGS{11227376,
+  author={Zhang, Xiangrui},
+  booktitle={2025 International Joint Conference on Neural Networks (IJCNN)}, 
+  title={DMIMHD: Dynamic Modality Interaction for Multi-Modal Human Desire Understanding}, 
   year={2025},
-  note={In press}
-}
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Adaptation models;Visualization;Limiting;Computational modeling;Neural networks;Behavioral sciences;Human desire understanding;Multimedia;Modality interaction;Dynamic selecting},
+  doi={10.1109/IJCNN64981.2025.11227376}}
 ```
 
 ---
 
 ## 📬 Contact
+For questions, collaborations, or implementation details, feel free to reach out:
 
-For questions or collaborations, feel free to reach out:
-
-**Email:** xiangruizhang00@gmail.com
+👤 Author: Xiangrui Zhang
+📧 Email: xiangruizhang00@gmail.com
