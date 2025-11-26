@@ -12,7 +12,7 @@ This repository contains the **official implementation** of the paper:
 > Published in the *2025 International Joint Conference on Neural Networks (IJCNN)*, Rome, Italy.  
 > [DOI: 10.1109/IJCNN64981.2025.11227376](https://doi.org/10.1109/IJCNN64981.2025.11227376)
 
-📄 [[PDF (IEEE Xplore)]](https://doi.org/10.1109/IJCNN64981.2025.11227376) | [[Local PDF]](./DMIMHD.pdf)
+📄 [[Read on IEEE Xplore]](https://doi.org/10.1109/IJCNN64981.2025.11227376)
 
 ---
 
